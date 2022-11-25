@@ -1,0 +1,15 @@
+2.3
+p1 = str(input('введите пароль: '))
+d=len(p1)
+x = p1.isalpha()
+running = True
+
+while running:
+    if d>8 and x == True:
+        print ('ваш пароль принят');
+        running = False
+    else :
+        p1 = str(input('Пароль может содержать только буквы. Введите пароль от 8 символов:'))
+        d = len(p1)
+        x = p1.isalpha();
+        continue
